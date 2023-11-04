@@ -12,7 +12,7 @@ function App() {
     let str="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
     let pass=''
     if(number) {str+="1234567890";}
-    if(char) {str+="~`!@#$%^&*()-_+=|\}]{[:;?/>.<,"}
+    if(char) {str+="!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" + '"'}
     for (let i = 0; i <length; i++) {
         let char = Math.floor(Math.random() * str.length +1);
         pass+=str.charAt(char); 
@@ -41,7 +41,7 @@ function App() {
     <div className=' w-full max-w-lg  mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-blue-900 text-[black]'>
       <h1 className='text-white text-2xl my-2 mb-3 text-center'>Password Generator</h1>
       <div className='flex justify-center mb-4'>
-      <input className='bg-white text-center rounded-lg px-24  py-2 '
+      <input className='outline-none w-full py-1 px-3 rounded-lg '
       placeholder='Password'
       type='text'
       ref={psref}
@@ -56,7 +56,7 @@ function App() {
       id='range'
       type='range'
       min={8}
-      max={32}
+      max={44}
       value={length}
       onChange={(e)=>{setLength(e.target.value)}}
       />
