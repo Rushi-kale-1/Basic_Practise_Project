@@ -43,8 +43,37 @@ This project is a React application that provides real-time currency conversion 
 1. Clone the repository.
 2. Navigate to the `live_currency_converter` directory.
 3. Install dependencies:
+   
+   npm install
+
+
+
+### Password Generator
+
+
+# Password Generator
+
+This project is a React application that generates strong, random passwords based on user-selected criteria.
+
+## Features
+
+- Generates random passwords.
+- Options to include uppercase, lowercase, numbers, and special characters.
+- Adjustable password length.
+
+## Technologies Used
+
+- React
+- CSS
+
+## Usage
+
+1. Clone the repository.
+2. Navigate to the `password_generator` directory.
+3. Install dependencies:
    ```sh
    npm install
+
 
 **Usage:**
 1. Clone the repository.
